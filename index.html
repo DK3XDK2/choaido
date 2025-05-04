@@ -146,6 +146,8 @@
 
     yesBtn.addEventListener('click', () => {
       document.body.innerHTML = `
+       document.body.style.overflowY = 'auto';
+document.body.style.overflowX = 'hidden';
         <canvas id="canvas"></canvas>
         <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); text-align: center; z-index: 1;">
           <img src="cute.jfif" alt="Cute" style="max-width: 300px; border-radius: 20px; box-shadow: 0 0 20px #f99;" />
